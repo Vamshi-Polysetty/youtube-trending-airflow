@@ -30,7 +30,27 @@ This project builds an end-to-end **ETL data pipeline** that fetches real-time t
 
 ## 📁 Folder Structure
 
-<pre><code>```text docker/ ├── airflow/ │ ├── dags/ │ │ └── youtube_dag.py # Airflow DAG definition │ ├── scripts/ │ │ ├── extract.py # YouTube API data extractor │ │ ├── transform.py # Data cleaning script │ │ └── load.py # Load data into SQLite │ ├── data/ │ │ ├── raw_data.json # Raw YouTube API output │ │ ├── clean_data.csv # Cleaned CSV data │ │ └── youtube_trending.db # Final SQLite database │ └── airflow.cfg (optional) # Airflow config (ignored in .gitignore) ├── docker-compose.yml # Docker orchestration file ├── Dockerfile # Custom Airflow Docker image ├── .gitignore # Prevents heavy/log files from uploading ├── README.md # Project documentation └── check_db.py # Script to check DB output ```</code></pre>
+```text
+docker/
+├── airflow/
+│   ├── dags/
+│   │   └── youtube_dag.py          # Airflow DAG definition
+│   ├── scripts/
+│   │   ├── extract.py              # YouTube API data extractor
+│   │   ├── transform.py            # Data cleaning script
+│   │   └── load.py                 # Load data into SQLite
+│   ├── data/
+│   │   ├── raw_data.json           # Raw YouTube API output
+│   │   ├── clean_data.csv          # Cleaned CSV data
+│   │   └── youtube_trending.db     # Final SQLite database
+│   └── airflow.cfg (optional)      # Airflow config (ignored in .gitignore)
+
+├── docker-compose.yml              # Docker orchestration file
+├── Dockerfile                      # Custom Airflow Docker image
+├── .gitignore                      # Prevents heavy/log files from uploading
+├── README.md                       # Project documentation
+└── check_db.py                     # Script to check DB output
+
 
 ## ⚙️ How to Run the Project
 
