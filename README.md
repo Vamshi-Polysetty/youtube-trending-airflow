@@ -50,7 +50,7 @@ docker/
 ├── .gitignore                      # Prevents heavy/log files from uploading
 ├── README.md                       # Project documentation
 └── check_db.py                     # Script to check DB output
-
+```
 
 ## ⚙️ How to Run the Project
 
