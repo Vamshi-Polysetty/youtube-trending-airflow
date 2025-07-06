@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+logs/
+airflow/logs/
+airflow/__pycache__/
+airflow/data/
+*.db
+*.csv
+*.json
+# Airflow auth file
+airflow/simple_auth_manager_passwords.json
